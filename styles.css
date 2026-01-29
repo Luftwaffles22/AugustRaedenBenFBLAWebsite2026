@@ -1,0 +1,37 @@
+a {
+  color: white;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    font-size: 1.2rem;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: red;
+}
+
+.found__item__post {
+  display: flex;
+  align-items: center;
+  justify-content: center;    
+  gap: 3rem;                  
+}
+
+.found__item__post__rev {
+  flex-direction: row-reverse;
+}
+
+
+footer {
+  display: flex;
+  margin-top: auto;
+  color: white;
+  background-color: red;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
