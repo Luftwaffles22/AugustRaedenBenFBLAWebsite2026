@@ -1,0 +1,93 @@
+
+header {
+  display: flex;
+  align-items: center;
+  height: 5vh;
+  width: auto;
+  justify-content: center;
+  background-color: red;
+}
+
+.popup {
+  color: white;
+  font-size: 3vh;
+}
+
+.found-item-post {
+  display: flex;
+  font-size: 2vw;
+  align-items: center;
+  justify-content: left;
+}
+
+.found-item-post-rev {
+  display: flex;
+  font-size: 2vw;
+  align-items: center;
+  justify-content: right;
+}
+
+#images{
+  height: 30vh;
+  width: 30vh;
+}
+
+#logo{
+  height: 5vh;
+  width: 5vh;
+}
+.popup {
+  padding-top: 35vh;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  z-index: 1;
+}
+
+.popup .popuptext {
+  padding-bottom: 5vh;
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+  background-color: #555;
+  justify-content: center;
+  color: #fff;
+  width: 100vw;
+  height: 30vh;
+}
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -0.3rem;
+  border-width: 0.3rem;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+#loginpin{
+  font-size: 5vh;
+  width: 10vw;
+  align-self: center;
+  height: 5vh;
+}
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
