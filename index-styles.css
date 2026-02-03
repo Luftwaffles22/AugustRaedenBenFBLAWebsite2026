@@ -8,14 +8,13 @@ header {
   justify-content: center;
   background-color: red;
 }
-#images{
-
+#images {
   height: 28vh;
   width: 28vh;
 }
 .homepage__example {
   display: flex;
-    max-width: 100vw;
+  max-width: 100vw;
   font-size: 2vw;
   align-items: center;
   justify-content: left;
@@ -27,17 +26,17 @@ header {
   align-items: center;
   justify-content: right;
 }
-.homepage__example1{
+.homepage__example1 {
   display: flex;
   font-size: 2vw;
-    max-width: 100vw;
+  max-width: 100vw;
   align-items: center;
   justify-content: left;
 }
 
 footer {
   width: 100%;
-    max-width: 100vw;
+  max-width: 100vw;
   font-size: 3vh;
   width: 100vw;
   height: 10vh;
@@ -47,14 +46,16 @@ footer {
   align-items: center;
   gap: 5vw;
   height: 6vh;
-  
+  position: fixed;
+  bottom: 0;
   justify-content: center;
 }
-#logo{
+#logo {
   height: 5vh;
   width: 5vh;
 }
 .popup {
+  color: #fff;
   max-width: 100%;
   padding-top: 35vh;
   text-align: center;
@@ -82,7 +83,6 @@ footer {
   height: 30vh;
 }
 
-
 .popup .popuptext::after {
   content: "";
   position: absolute;
@@ -93,7 +93,7 @@ footer {
   border-style: solid;
   border-color: #555 transparent transparent transparent;
 }
-#loginpin{
+#loginpin {
   font-size: 2.5vw;
   width: 20vw;
   align-self: center;
@@ -105,13 +105,20 @@ footer {
   animation: fadeIn 1s;
 }
 
-
 @-webkit-keyframes fadeIn {
-  from {opacity: 0;} 
-  to {opacity: 1;}
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity:1 ;}
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

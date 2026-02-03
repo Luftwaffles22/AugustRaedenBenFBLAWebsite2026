@@ -111,6 +111,8 @@ footer {
   align-items: center;
   gap: 5vw;
   height: 5vh;
+  position: fixed;
+  bottom: 0;
   justify-content: center;
 }
 footer img {
