@@ -1,37 +1,48 @@
-
 header {
   display: flex;
-  align-items: center;
   height: 5vh;
-  width: auto;
+  font-size: 3vh;
+  align-items: center;
   justify-content: center;
   background-color: red;
 }
-
-.popup {
-  color: white;
-  font-size: 3vh;
+#images{
+  height: 30vh;
+  width: 30vh;
 }
-
-.found-item-post {
+.homepage__example {
+  display: flex;
+  font-size: 2vw;
+  align-items: center;
+  justify-content: left;
+}
+.homepage__example__reversed {
+  display: flex;
+  font-size: 2vw;
+  align-items: center;
+  justify-content: right;
+}
+.homepage__example1{
   display: flex;
   font-size: 2vw;
   align-items: center;
   justify-content: left;
 }
 
-.found-item-post-rev {
+footer {
+  font-size: 3vh;
+  position: fixed;
+  width: 100vw;
+  height: 10vh;
   display: flex;
-  font-size: 2vw;
+  color: white;
+  background-color: red;
   align-items: center;
-  justify-content: right;
+  gap: 5vw;
+  height: 6vh;
+  bottom: 0;
+  justify-content: center;
 }
-
-#images{
-  height: 30vh;
-  width: 30vh;
-}
-
 #logo{
   height: 5vh;
   width: 5vh;
@@ -46,6 +57,7 @@ header {
   -ms-user-select: none;
   user-select: none;
   z-index: 1;
+  font-size: 4vh;
 }
 
 .popup .popuptext {
@@ -60,27 +72,30 @@ header {
   width: 100vw;
   height: 30vh;
 }
+
+
 .popup .popuptext::after {
   content: "";
   position: absolute;
   top: 100%;
   left: 50%;
-  margin-left: -0.3rem;
-  border-width: 0.3rem;
+  margin-left: -5px;
+  border-width: 5px;
   border-style: solid;
   border-color: #555 transparent transparent transparent;
 }
 #loginpin{
   font-size: 5vh;
-  width: 10vw;
+  width: 7vw;
   align-self: center;
-  height: 5vh;
+  height: 7vh;
 }
 .popup .show {
   visibility: visible;
   -webkit-animation: fadeIn 1s;
   animation: fadeIn 1s;
 }
+
 
 @-webkit-keyframes fadeIn {
   from {opacity: 0;} 
