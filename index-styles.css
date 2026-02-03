@@ -3,7 +3,6 @@ header {
   width: 100wv;
   display: flex;
   height: 5vh;
-  font-size: 3vh;
   align-items: center;
   justify-content: center;
   background-color: red;
@@ -18,6 +17,7 @@ header {
   font-size: 2vw;
   align-items: center;
   justify-content: left;
+  gap: 2vw;
 }
 .homepage__example__reversed {
   display: flex;
@@ -25,6 +25,7 @@ header {
   max-width: 100vw;
   align-items: center;
   justify-content: right;
+  gap: 2vw;
 }
 .homepage__example1 {
   display: flex;
@@ -32,12 +33,13 @@ header {
   max-width: 100vw;
   align-items: center;
   justify-content: left;
+  gap: 2vw;
 }
 
 footer {
   width: 100%;
   max-width: 100vw;
-  font-size: 3vh;
+  font-size: 2.5vw;
   width: 100vw;
   height: 10vh;
   display: flex;
@@ -66,7 +68,7 @@ footer {
   -ms-user-select: none;
   user-select: none;
   z-index: 1;
-  font-size: 4vh;
+  font-size: 2.5vw;
 }
 
 .popup .popuptext {
@@ -82,22 +84,15 @@ footer {
   width: 100vw;
   height: 30vh;
 }
-
-.popup .popuptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #555 transparent transparent transparent;
-}
 #loginpin {
   font-size: 2.5vw;
-  width: 20vw;
+  width: 12.5vw;
   align-self: center;
-  height: 7vh;
+  height: 5vh;
+  text-align: center;
+  font-family:
+    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Verdana, sans-serif;
 }
 .popup .show {
   visibility: visible;
