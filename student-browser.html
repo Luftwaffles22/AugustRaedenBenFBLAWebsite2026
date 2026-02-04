@@ -5,17 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MHS Lost & Found</title>
     <link rel="stylesheet" href="stylesheets/global-styles.css">
-    <link rel="stylesheet" href="stylesheets/admin-browser-styles.css">
+    <link rel="stylesheet" href="stylesheets/student-browser-styles.css">
   </head>
   <body>
     <main>
-      <!--Admin Browser Header - Contains listing filters, clicking on them triggers js to only show certain listings-->
+      <!--Student Browser Header - Contains listing filters and listing creation button, clicking on them triggers js to only show certain listings or sends to creation-->
       <header>
-        <span class="filters-title"><h1>Filters</h1></span>
         <div class="filters">
-          <a href="/">Posted</a>
-          <a href="/">Unposted</a>
-          <a href="/">Claims</a>
+          <a href="/">LOST LISTINGS</a>
+          <a href="/">FOUND LISTINGS</a>
+        </div>
+        <div class="student-listing-creation">
+          <a href="lost-item-creation.html">Create Listing</a>
         </div>
       </header>
       <!--Main Body - Contains listing divs, dynamically updated through js-->
@@ -37,7 +38,7 @@
         >
         <h2>Item Description</h2>
         <h2>Posted x/x/x By: John Smith</h2>
-        <h2><a href="/">Tap to View</a></h2>
+        <h2><a href="student-item-listing.html">Tap to View</a></h2>
       </div>
       <div class="listing-container">
         <img src="images/sweater.webp"

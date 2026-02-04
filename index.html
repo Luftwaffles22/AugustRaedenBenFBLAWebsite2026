@@ -4,20 +4,20 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MHS Lost & Found</title>
-    <link rel="stylesheet" href="index-styles.css" />
-    <link rel="stylesheet" href="global-styles.css" />
+    <link rel="stylesheet" href="stylesheets/global-styles.css">
+    <link rel="stylesheet" href="stylesheets/index-styles.css">
   </head>
   <body>
     <main>
+      <!--Homepage Header - Contains Login Button -->
       <header>
-       
         <div class="popup">
-           <h1 onclick="loginpopup()" id="logintext">Login</h1>
+          <p onclick="loginpopup()">LOGIN</p>
           <span class="popuptext" id="myPopup">
             Input ID
-            <input id="loginpin" type="text" maxlength="5" size="5" />
+            <input id="loginpin" type="text">
             <p onclick="checkpin()" id="enterbutton">Enter</p>
-          </span>
+          </span>  
         </div>
         <script>
           function loginpopup() {
@@ -26,7 +26,10 @@
           }
         </script>
       </header>
-      <div class="homepage__example">
+      <!--End of Header - Start of Info Boxes-->
+
+      <!--Info Boxes - Contain 1 text box and 1 image, to display items found with our website-->
+      <div class="found-item-post">
         <img
           id="images"
           src="images/owala.webp"
@@ -36,8 +39,8 @@
         />
         <p>This is a text box.</p>
       </div>
-      <div class="homepage__example__reversed">
-        <p>This is a text box.</p>
+      <!--Reversed Info Box - Must be reversed to follow common reading paths-->
+      <div class="found-item-post found-item-post-rev">
         <img
           id="images"
           src="images/lunchbox.webp"
@@ -46,7 +49,8 @@
           height="200"
         />
       </div>
-      <div class="homepage__example1">
+
+      <div class="found-item-post">
         <img
           id="images"
           src="images/sweater.webp"
@@ -56,10 +60,13 @@
         />
         <p>This is a text box.</p>
       </div>
+      <!--End of Info Boxes - Start of Footer-->
+      <!--Footer - Contains SDM Link, Website Title, Menu Button-->
       <footer>
         <p>
           <a href="https://www.milton.k12.wi.us/">
             <img
+            id="logo"
               src="images/red_hawks_logo.webp"
               alt="Milton School District website link."
               width="50"
@@ -70,6 +77,7 @@
         <p>MHS Lost & Found</p>
         <a href="#">Menu</a>
       </footer>
+      <!--End of Footer-->
     </main>
   </body>
 </html>
